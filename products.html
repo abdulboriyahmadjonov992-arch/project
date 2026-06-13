@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahsulotlar — SOLE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-logo"><span>S</span>OLE</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Bosh sahifa</a></li>
+    <li><a href="products.html" class="active">Mahsulotlar</a></li>
+    <li><a href="cart.html">Savat</a></li>
+    <li><a href="liked.html">Sevimlilar</a></li>
+    <li><a href="checkout.html">Buyurtma</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="liked.html" class="nav-icon"><i class="fa-regular fa-heart"></i></a>
+    <a href="cart.html" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i><span class="badge">3</span></a>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-hd">
+  <div class="breadcrumb">
+    <a href="index.html">Bosh sahifa</a>
+    <span><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i></span>
+    <span style="color:#aaa;">Mahsulotlar</span>
+  </div>
+  <h1>Barcha Mahsulotlar</h1>
+  <p>500+ dan ortiq model, barcha brendlar</p>
+</div>
+
+<!-- PRODUCTS WRAP -->
+<div class="products-wrap">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sb-title"><i class="fa-solid fa-sliders" style="color:var(--accent);margin-right:8px;"></i>Filtr</div>
+
+    <div class="filter-group">
+      <div class="fl-label">Brend</div>
+      <label class="fl-option"><input type="checkbox" checked><span>Nike</span></label>
+      <label class="fl-option"><input type="checkbox"><span>Adidas</span></label>
+      <label class="fl-option"><input type="checkbox"><span>Jordan</span></label>
+      <label class="fl-option"><input type="checkbox"><span>Converse</span></label>
+      <label class="fl-option"><input type="checkbox"><span>ASICS</span></label>
+      <label class="fl-option"><input type="checkbox"><span>Reebok</span></label>
+    </div>
+
+    <div class="fl-divider"></div>
+
+    <div class="filter-group">
+      <div class="fl-label">Kategoriya</div>
+      <label class="fl-option"><input type="checkbox" checked><span>Sport</span></label>
+      <label class="fl-option"><input type="checkbox"><span>Kundalik</span></label>
+      <label class="fl-option"><input type="checkbox"><span>Klassik</span></label>
+      <label class="fl-option"><input type="checkbox"><span>Yugurish</span></label>
+    </div>
+
+    <div class="fl-divider"></div>
+
+    <div class="filter-group">
+      <div class="fl-label">O'lcham (EU)</div>
+      <div class="sz-grid">
+        <div class="sz-opt"><input type="checkbox" id="s38"><label for="s38">38</label></div>
+        <div class="sz-opt"><input type="checkbox" id="s39"><label for="s39">39</label></div>
+        <div class="sz-opt"><input type="checkbox" id="s40" checked><label for="s40">40</label></div>
+        <div class="sz-opt"><input type="checkbox" id="s41" checked><label for="s41">41</label></div>
+        <div class="sz-opt"><input type="checkbox" id="s42"><label for="s42">42</label></div>
+        <div class="sz-opt"><input type="checkbox" id="s43"><label for="s43">43</label></div>
+        <div class="sz-opt"><input type="checkbox" id="s44"><label for="s44">44</label></div>
+        <div class="sz-opt"><input type="checkbox" id="s45"><label for="s45">45</label></div>
+      </div>
+    </div>
+
+    <div class="fl-divider"></div>
+
+    <div class="filter-group">
+      <div class="fl-label">Narx</div>
+      <label class="fl-option"><input type="checkbox"><span>$50 – $100</span></label>
+      <label class="fl-option"><input type="checkbox" checked><span>$100 – $200</span></label>
+      <label class="fl-option"><input type="checkbox"><span>$200 – $300</span></label>
+      <label class="fl-option"><input type="checkbox"><span>$300+</span></label>
+    </div>
+
+    <div class="fl-divider"></div>
+
+    <div class="filter-group">
+      <div class="fl-label">Holat</div>
+      <label class="fl-option"><input type="checkbox" checked><span>Chegirmada</span></label>
+      <label class="fl-option"><input type="checkbox"><span>Yangi</span></label>
+      <label class="fl-option"><input type="checkbox"><span>Trendda</span></label>
+    </div>
+  </aside>
+
+  <!-- PRODUCTS GRID -->
+  <div>
+    <div class="sort-row">
+      <span class="res-count"><i class="fa-solid fa-box-open" style="color:var(--accent);margin-right:6px;"></i>48 ta mahsulot topildi</span>
+      <select class="sort-sel">
+        <option>Saralash: Mashhurlik</option>
+        <option>Narx: Arzondan qimmatga</option>
+        <option>Narx: Qimmatdan arzonga</option>
+        <option>Yangilari birinchi</option>
+        <option>Chegirmalari ko'p</option>
+      </select>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="pcard">
+        <div class="pimg img-1"><img src="https://images.unsplash.com/photo-ft2UhxkefwE?w=400&h=280&q=80&auto=format&fit=crop" alt="Nike Air Max 270"></div>
+        <span class="pbadge sale">Chegirma</span>
+        <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+        <div class="pinfo">
+          <div class="pbrand">Nike</div>
+          <div class="pname">Air Max 270</div>
+          <div class="psizes"><span class="sz">40</span><span class="sz">41</span><span class="sz">42</span><span class="sz">43</span></div>
+          <div class="pfooter">
+            <div><div class="pprice-current">$149</div><div class="pprice-old">$189</div></div>
+            <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg img-2"><img src="https://images.unsplash.com/photo-164_6wVEHfI?w=400&h=280&q=80&auto=format&fit=crop" alt="Jordan 1 Retro"></div>
+        <span class="pbadge new">Yangi</span>
+        <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+        <div class="pinfo">
+          <div class="pbrand">Jordan</div>
+          <div class="pname">Air Jordan 1 Retro High</div>
+          <div class="psizes"><span class="sz">40</span><span class="sz">41</span><span class="sz">42</span></div>
+          <div class="pfooter">
+            <div><div class="pprice-current">$219</div></div>
+            <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg img-3"><img src="https://images.unsplash.com/photo-kP6knT7tjn4?w=400&h=280&q=80&auto=format&fit=crop" alt="Yeezy 350"></div>
+        <span class="pbadge hot">Trendda</span>
+        <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+        <div class="pinfo">
+          <div class="pbrand">Adidas</div>
+          <div class="pname">Yeezy Boost 350 V2</div>
+          <div class="psizes"><span class="sz">41</span><span class="sz">42</span><span class="sz">43</span></div>
+          <div class="pfooter">
+            <div><div class="pprice-current">$289</div></div>
+            <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg img-4"><img src="https://images.unsplash.com/photo-jvoZ-Aux9aw?w=400&h=280&q=80&auto=format&fit=crop" alt="React Infinity"></div>
+        <span class="pbadge new">Yangi</span>
+        <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+        <div class="pinfo">
+          <div class="pbrand">Nike</div>
+          <div class="pname">React Infinity Run</div>
+          <div class="psizes"><span class="sz">40</span><span class="sz">41</span><span class="sz">42</span><span class="sz">43</span></div>
+          <div class="pfooter">
+            <div><div class="pprice-current">$159</div></div>
+            <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg img-5"><img src="https://images.unsplash.com/photo-gKEp40qEezc?w=400&h=280&q=80&auto=format&fit=crop" alt="Blazer Mid"></div>
+        <span class="pbadge sale">Chegirma</span>
+        <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+        <div class="pinfo">
+          <div class="pbrand">Nike</div>
+          <div class="pname">Blazer Mid '77</div>
+          <div class="psizes"><span class="sz">40</span><span class="sz">41</span><span class="sz">43</span><span class="sz">44</span></div>
+          <div class="pfooter">
+            <div><div class="pprice-current">$99</div><div class="pprice-old">$129</div></div>
+            <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg img-6"><img src="https://images.unsplash.com/photo-su7PjvuQ-1c?w=400&h=280&q=80&auto=format&fit=crop" alt="Chuck Taylor"></div>
+        <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+        <div class="pinfo">
+          <div class="pbrand">Converse</div>
+          <div class="pname">Chuck Taylor All Star</div>
+          <div class="psizes"><span class="sz">39</span><span class="sz">40</span><span class="sz">41</span><span class="sz">42</span></div>
+          <div class="pfooter">
+            <div><div class="pprice-current">$79</div></div>
+            <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg img-7"><img src="https://images.unsplash.com/photo-SD9Jyl1xNQ4?w=400&h=280&q=80&auto=format&fit=crop" alt="NMD R1"></div>
+        <span class="pbadge new">Yangi</span>
+        <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+        <div class="pinfo">
+          <div class="pbrand">Adidas</div>
+          <div class="pname">NMD R1 Primeblue</div>
+          <div class="psizes"><span class="sz">41</span><span class="sz">42</span><span class="sz">43</span><span class="sz">44</span></div>
+          <div class="pfooter">
+            <div><div class="pprice-current">$139</div></div>
+            <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg img-8"><img src="https://images.unsplash.com/photo-dwKiHoqqxk8?w=400&h=280&q=80&auto=format&fit=crop" alt="Superstar"></div>
+        <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+        <div class="pinfo">
+          <div class="pbrand">Adidas</div>
+          <div class="pname">Superstar Classic</div>
+          <div class="psizes"><span class="sz">39</span><span class="sz">40</span><span class="sz">41</span><span class="sz">42</span></div>
+          <div class="pfooter">
+            <div><div class="pprice-current">$89</div></div>
+            <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg img-9"><img src="https://images.unsplash.com/photo-xw-Wr37B_gQ?w=400&h=280&q=80&auto=format&fit=crop" alt="Ultra Boost"></div>
+        <span class="pbadge hot">Trendda</span>
+        <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+        <div class="pinfo">
+          <div class="pbrand">Adidas</div>
+          <div class="pname">Ultra Boost 22</div>
+          <div class="psizes"><span class="sz">40</span><span class="sz">41</span><span class="sz">42</span><span class="sz">43</span></div>
+          <div class="pfooter">
+            <div><div class="pprice-current">$189</div></div>
+            <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg img-10"><img src="https://images.unsplash.com/photo-a-QH9MAAVNI?w=400&h=280&q=80&auto=format&fit=crop" alt="Forum Low"></div>
+        <span class="pbadge sale">Chegirma</span>
+        <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+        <div class="pinfo">
+          <div class="pbrand">Nike</div>
+          <div class="pname">Forum Low</div>
+          <div class="psizes"><span class="sz">40</span><span class="sz">42</span><span class="sz">43</span><span class="sz">44</span></div>
+          <div class="pfooter">
+            <div><div class="pprice-current">$109</div><div class="pprice-old">$139</div></div>
+            <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg img-11"><img src="https://images.unsplash.com/photo-LxVxPA1LOVM?w=400&h=280&q=80&auto=format&fit=crop" alt="Gel-Lyte"></div>
+        <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+        <div class="pinfo">
+          <div class="pbrand">ASICS</div>
+          <div class="pname">Gel-Lyte III OG</div>
+          <div class="psizes"><span class="sz">40</span><span class="sz">41</span><span class="sz">42</span></div>
+          <div class="pfooter">
+            <div><div class="pprice-current">$129</div></div>
+            <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg img-12"><img src="https://images.unsplash.com/photo-sYbEa40YhWQ?w=400&h=280&q=80&auto=format&fit=crop" alt="Classic Leather"></div>
+        <span class="pbadge new">Yangi</span>
+        <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+        <div class="pinfo">
+          <div class="pbrand">Reebok</div>
+          <div class="pname">Classic Leather</div>
+          <div class="psizes"><span class="sz">39</span><span class="sz">40</span><span class="sz">41</span><span class="sz">42</span></div>
+          <div class="pfooter">
+            <div><div class="pprice-current">$99</div></div>
+            <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="logo"><span>S</span>OLE</div>
+      <p>Eng sara krasovkalar — sportdan tortib kundalik hayotgacha.</p>
+      <div class="foot-social">
+        <div class="soc"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="soc"><i class="fa-brands fa-instagram"></i></div>
+        <div class="soc"><i class="fa-brands fa-youtube"></i></div>
+        <div class="soc"><i class="fa-brands fa-telegram"></i></div>
+      </div>
+    </div>
+    <div class="foot-col"><h4>Sahifalar</h4><ul>
+      <li><a href="index.html">Bosh sahifa</a></li>
+      <li><a href="products.html">Mahsulotlar</a></li>
+      <li><a href="cart.html">Savat</a></li>
+      <li><a href="liked.html">Sevimlilar</a></li>
+    </ul></div>
+    <div class="foot-col"><h4>Brendlar</h4><ul>
+      <li><a href="#">Nike</a></li><li><a href="#">Adidas</a></li>
+      <li><a href="#">Jordan</a></li><li><a href="#">Converse</a></li>
+    </ul></div>
+    <div class="foot-col"><h4>Aloqa</h4><ul>
+      <li><a href="#"><i class="fa-solid fa-phone" style="width:14px;"></i> +998 90 123 45 67</a></li>
+      <li><a href="#"><i class="fa-solid fa-envelope" style="width:14px;"></i> info@sole.uz</a></li>
+      <li><a href="#"><i class="fa-solid fa-location-dot" style="width:14px;"></i> Toshkent, O'zbekiston</a></li>
+    </ul></div>
+  </div>
+  <div class="foot-bottom">
+    <p>© 2026 SOLE. Barcha huquqlar himoyalangan.</p>
+    <div class="foot-links"><a href="#">Maxfiylik</a><a href="#">Shartlar</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buyurtma — SOLE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-logo"><span>S</span>OLE</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Bosh sahifa</a></li>
+    <li><a href="products.html">Mahsulotlar</a></li>
+    <li><a href="cart.html">Savat</a></li>
+    <li><a href="liked.html">Sevimlilar</a></li>
+    <li><a href="checkout.html" class="active">Buyurtma</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="liked.html" class="nav-icon"><i class="fa-regular fa-heart"></i></a>
+    <a href="cart.html" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i><span class="badge">3</span></a>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-hd">
+  <div class="breadcrumb">
+    <a href="index.html">Bosh sahifa</a>
+    <span><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i></span>
+    <a href="cart.html">Savat</a>
+    <span><i class="fa-solid fa-chevron-right" style="font-size:10px;"></i></span>
+    <span style="color:#aaa;">Buyurtma</span>
+  </div>
+  <h1>Buyurtma Berish</h1>
+  <p>Ma'lumotlarni to'ldiring va buyurtmangizni tasdiqlang</p>
+</div>
+
+<!-- CHECKOUT LAYOUT -->
+<div class="checkout-wrap">
+
+  <!-- LEFT: FORM -->
+  <div class="cform-box">
+
+    <!-- Section 1: Personal Info -->
+    <div class="fs">
+      <div class="fs-title">
+        <span class="fs-num">1</span>
+        <i class="fa-solid fa-user" style="color:var(--accent);"></i> Shaxsiy ma'lumotlar
+      </div>
+      <div class="frow">
+        <div class="fgroup">
+          <label><i class="fa-solid fa-user" style="width:14px;"></i> Ism</label>
+          <input type="text" placeholder="Sardor">
+        </div>
+        <div class="fgroup">
+          <label><i class="fa-solid fa-user" style="width:14px;"></i> Familiya</label>
+          <input type="text" placeholder="Toshmatov">
+        </div>
+        <div class="fgroup">
+          <label><i class="fa-solid fa-phone" style="width:14px;"></i> Telefon raqam</label>
+          <input type="tel" placeholder="+998 90 000 00 00">
+        </div>
+        <div class="fgroup">
+          <label><i class="fa-solid fa-envelope" style="width:14px;"></i> Email</label>
+          <input type="email" placeholder="sardor@gmail.com">
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Delivery -->
+    <div class="fs">
+      <div class="fs-title">
+        <span class="fs-num">2</span>
+        <i class="fa-solid fa-location-dot" style="color:var(--accent);"></i> Yetkazib berish manzili
+      </div>
+      <div class="frow">
+        <div class="fgroup">
+          <label><i class="fa-solid fa-city" style="width:14px;"></i> Shahar / Tuman</label>
+          <select>
+            <option>Toshkent</option>
+            <option>Samarqand</option>
+            <option>Buxoro</option>
+            <option>Namangan</option>
+            <option>Andijon</option>
+            <option>Farg'ona</option>
+            <option>Qo'qon</option>
+          </select>
+        </div>
+        <div class="fgroup">
+          <label><i class="fa-solid fa-road" style="width:14px;"></i> Ko'cha nomi</label>
+          <input type="text" placeholder="Amir Temur ko'chasi">
+        </div>
+        <div class="fgroup full">
+          <label><i class="fa-solid fa-building" style="width:14px;"></i> Uy / Kvartira raqami</label>
+          <input type="text" placeholder="Uy 12, Kvartira 34">
+        </div>
+        <div class="fgroup full">
+          <label><i class="fa-solid fa-comment-dots" style="width:14px;"></i> Qo'shimcha izoh (ixtiyoriy)</label>
+          <input type="text" placeholder="Qo'ng'iroq qilmang, xabar yuboring">
+        </div>
+      </div>
+
+      <!-- Delivery Options -->
+      <div style="margin-top:8px;">
+        <div class="fl-label" style="margin-bottom:12px;"><i class="fa-solid fa-truck-fast" style="color:var(--accent);margin-right:4px;"></i>Yetkazib berish usuli</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <label style="cursor:pointer;">
+            <input type="radio" name="delivery" id="d1" style="display:none;">
+            <label for="d1" style="display:flex;flex-direction:column;gap:4px;padding:16px;border:2px solid var(--primary);border-radius:12px;background:var(--primary);cursor:pointer;">
+              <i class="fa-solid fa-truck-fast" style="font-size:22px;color:#fff;"></i>
+              <span style="font-size:13px;font-weight:700;color:#fff;">Standart</span>
+              <span style="font-size:11px;color:#888;">1-2 ish kuni · Bepul</span>
+            </label>
+          </label>
+          <label style="cursor:pointer;">
+            <input type="radio" name="delivery" id="d2" style="display:none;">
+            <label for="d2" style="display:flex;flex-direction:column;gap:4px;padding:16px;border:2px solid var(--border);border-radius:12px;cursor:pointer;">
+              <i class="fa-solid fa-bolt" style="font-size:22px;color:#ff9f0a;"></i>
+              <span style="font-size:13px;font-weight:700;color:var(--text);">Ekspress</span>
+              <span style="font-size:11px;color:var(--muted);">Bugun · $9.99</span>
+            </label>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Payment -->
+    <div class="fs">
+      <div class="fs-title">
+        <span class="fs-num">3</span>
+        <i class="fa-solid fa-credit-card" style="color:var(--accent);"></i> To'lov usuli
+      </div>
+      <div class="pay-methods">
+        <div class="pay-opt">
+          <input type="radio" name="payment" id="p1" checked>
+          <label class="pay-label" for="p1">
+            <i class="fa-solid fa-credit-card"></i>
+            <span>Karta</span>
+          </label>
+        </div>
+        <div class="pay-opt">
+          <input type="radio" name="payment" id="p2">
+          <label class="pay-label" for="p2">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            <span>Naqd pul</span>
+          </label>
+        </div>
+        <div class="pay-opt">
+          <input type="radio" name="payment" id="p3">
+          <label class="pay-label" for="p3">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <span>Click/Payme</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="frow">
+        <div class="fgroup full">
+          <label><i class="fa-solid fa-credit-card" style="width:14px;"></i> Karta raqami</label>
+          <input type="text" placeholder="0000 0000 0000 0000">
+        </div>
+        <div class="fgroup">
+          <label><i class="fa-regular fa-calendar" style="width:14px;"></i> Amal qilish muddati</label>
+          <input type="text" placeholder="MM / YY">
+        </div>
+        <div class="fgroup">
+          <label><i class="fa-solid fa-shield-halved" style="width:14px;"></i> CVV kodi</label>
+          <input type="text" placeholder="123">
+        </div>
+        <div class="fgroup full">
+          <label><i class="fa-solid fa-user" style="width:14px;"></i> Karta egasining ismi</label>
+          <input type="text" placeholder="SARDOR TOSHMATOV">
+        </div>
+      </div>
+    </div>
+
+    <!-- Place Order -->
+    <button class="place-btn">
+      <i class="fa-solid fa-check-circle"></i> &nbsp;Buyurtmani tasdiqlash — $591.30
+    </button>
+
+    <div style="margin-top:14px;text-align:center;font-size:12px;color:var(--muted);">
+      <i class="fa-solid fa-lock" style="color:#30d158;margin-right:4px;"></i>
+      Ma'lumotlaringiz shifrlangan va xavfsiz
+    </div>
+  </div>
+
+  <!-- RIGHT: ORDER SUMMARY -->
+  <div>
+    <div class="summary">
+      <div class="sum-title"><i class="fa-solid fa-receipt" style="color:var(--accent);margin-right:8px;"></i>Buyurtma tarkibi</div>
+
+      <!-- Items -->
+      <div class="co-items">
+        <div class="co-item">
+          <div class="co-img img-1">
+            <img src="https://images.unsplash.com/photo-ft2UhxkefwE?w=80&h=80&q=80&auto=format&fit=crop" alt="Air Max 270">
+          </div>
+          <div class="co-info">
+            <div class="co-name">Nike Air Max 270</div>
+            <div class="co-meta"><i class="fa-solid fa-ruler-horizontal" style="font-size:9px;margin-right:2px;"></i>42 · Qora · x1</div>
+          </div>
+          <div class="co-price">$149</div>
+        </div>
+
+        <div class="co-item">
+          <div class="co-img img-2">
+            <img src="https://images.unsplash.com/photo-164_6wVEHfI?w=80&h=80&q=80&auto=format&fit=crop" alt="Jordan 1">
+          </div>
+          <div class="co-info">
+            <div class="co-name">Air Jordan 1 Retro High</div>
+            <div class="co-meta"><i class="fa-solid fa-ruler-horizontal" style="font-size:9px;margin-right:2px;"></i>41 · Qizil · x1</div>
+          </div>
+          <div class="co-price">$219</div>
+        </div>
+
+        <div class="co-item">
+          <div class="co-img img-3">
+            <img src="https://images.unsplash.com/photo-kP6knT7tjn4?w=80&h=80&q=80&auto=format&fit=crop" alt="Yeezy 350">
+          </div>
+          <div class="co-info">
+            <div class="co-name">Yeezy Boost 350 V2</div>
+            <div class="co-meta"><i class="fa-solid fa-ruler-horizontal" style="font-size:9px;margin-right:2px;"></i>43 · Krema · x1</div>
+          </div>
+          <div class="co-price">$289</div>
+        </div>
+      </div>
+
+      <!-- Totals -->
+      <div class="sum-row"><span class="lbl">Mahsulotlar:</span><span>$657</span></div>
+      <div class="sum-row"><span class="lbl">Yetkazib berish:</span><span style="color:#30d158;font-weight:600;"><i class="fa-solid fa-truck-fast" style="margin-right:3px;"></i>Bepul</span></div>
+      <div class="sum-row"><span class="lbl">Promo chegirma:</span><span style="color:var(--accent);">−$65.70</span></div>
+      <div class="sum-row total"><span class="lbl">Jami to'lov:</span><span>$591.30</span></div>
+
+      <!-- Trust -->
+      <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:9px;">
+        <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);">
+          <i class="fa-solid fa-circle-check" style="color:#30d158;width:14px;"></i>
+          <span>100% original mahsulotlar</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);">
+          <i class="fa-solid fa-rotate-left" style="color:#30d158;width:14px;"></i>
+          <span>30 kun ichida qaytarish mumkin</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);">
+          <i class="fa-solid fa-phone" style="color:#30d158;width:14px;"></i>
+          <span>24/7 mijozlar xizmati</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="cart.html" style="display:block;text-align:center;margin-top:14px;font-size:13px;color:var(--muted);font-weight:500;">
+      <i class="fa-solid fa-arrow-left"></i> Savatga qaytish
+    </a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="logo"><span>S</span>OLE</div>
+      <p>Eng sara krasovkalar — sportdan tortib kundalik hayotgacha.</p>
+      <div class="foot-social">
+        <div class="soc"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="soc"><i class="fa-brands fa-instagram"></i></div>
+        <div class="soc"><i class="fa-brands fa-youtube"></i></div>
+        <div class="soc"><i class="fa-brands fa-telegram"></i></div>
+      </div>
+    </div>
+    <div class="foot-col"><h4>Sahifalar</h4><ul>
+      <li><a href="index.html">Bosh sahifa</a></li>
+      <li><a href="products.html">Mahsulotlar</a></li>
+      <li><a href="cart.html">Savat</a></li>
+      <li><a href="liked.html">Sevimlilar</a></li>
+    </ul></div>
+    <div class="foot-col"><h4>Brendlar</h4><ul>
+      <li><a href="#">Nike</a></li><li><a href="#">Adidas</a></li>
+      <li><a href="#">Jordan</a></li><li><a href="#">Converse</a></li>
+    </ul></div>
+    <div class="foot-col"><h4>Aloqa</h4><ul>
+      <li><a href="#"><i class="fa-solid fa-phone" style="width:14px;"></i> +998 90 123 45 67</a></li>
+      <li><a href="#"><i class="fa-solid fa-envelope" style="width:14px;"></i> info@sole.uz</a></li>
+      <li><a href="#"><i class="fa-solid fa-location-dot" style="width:14px;"></i> Toshkent, O'zbekiston</a></li>
+    </ul></div>
+  </div>
+  <div class="foot-bottom">
+    <p>© 2026 SOLE. Barcha huquqlar himoyalangan.</p>
+    <div class="foot-links"><a href="#">Maxfiylik</a><a href="#">Shartlar</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

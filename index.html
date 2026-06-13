@@ -1,12 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOLE — Krasovka Do'koni</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
 </head>
 <body>
-   
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-logo"><span>S</span>OLE</div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Bosh sahifa</a></li>
+    <li><a href="products.html">Mahsulotlar</a></li>
+    <li><a href="cart.html">Savat</a></li>
+    <li><a href="liked.html">Sevimlilar</a></li>
+    <li><a href="checkout.html">Buyurtma</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="liked.html" class="nav-icon"><i class="fa-regular fa-heart"></i></a>
+    <a href="cart.html" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i><span class="badge">3</span></a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">✦ Yangi Kolleksiya 2026</div>
+    <h1>Eng Sara<br><span>Krasovkalar</span><br>Siz Uchun</h1>
+    <p>Sport va kundalik hayot uchun eng zamonaviy va qulay krasovkalar. 500+ model, tez yetkazib berish.</p>
+    <div class="hero-btns">
+      <a href="products.html" class="btn btn-red">Hozir xarid qiling &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+      <a href="products.html" class="btn btn-outline">Kolleksiyani ko'rish</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Model</div></div>
+      <div class="stat"><div class="stat-num">12K+</div><div class="stat-label">Mijozlar</div></div>
+      <div class="stat"><div class="stat-num">4.9 <i class="fa-solid fa-star" style="font-size:20px;color:#ff9f0a;"></i></div><div class="stat-label">Reyting</div></div>
+    </div>
+  </div>
+  <div class="hero-visual" style="position:relative;">
+    <div class="shoe-circle">
+      <img src="https://images.unsplash.com/photo-NOpsC3nWTzY?w=500&h=500&q=85&auto=format&fit=crop" alt="Sneaker">
+    </div>
+    <div class="shoe-price-tag">
+      <span class="big">$149</span>
+      <span class="sm">dan boshlab</span>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section">
+  <div class="section-head">
+    <h2 class="section-title">Kategoriyalar <span>·</span></h2>
+    <a href="products.html" class="see-all">Barchasini ko'rish &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+  <div class="cats">
+    <a href="products.html" class="cat-card">
+      <div class="cat-emoji"><i class="fa-solid fa-person-running"></i></div>
+      <div class="cat-info"><div class="cat-name">Sport</div><div class="cat-count">142 ta model</div></div>
+    </a>
+    <a href="products.html" class="cat-card">
+      <div class="cat-emoji"><i class="fa-solid fa-shoe-prints"></i></div>
+      <div class="cat-info"><div class="cat-name">Kundalik</div><div class="cat-count">238 ta model</div></div>
+    </a>
+    <a href="products.html" class="cat-card">
+      <div class="cat-emoji"><i class="fa-solid fa-trophy"></i></div>
+      <div class="cat-info"><div class="cat-name">Klassik</div><div class="cat-count">97 ta model</div></div>
+    </a>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section" style="padding-top:0;">
+  <div class="section-head">
+    <h2 class="section-title">Ommabop <span>Modellar</span></h2>
+    <a href="products.html" class="see-all">Barchasini ko'rish &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+  <div class="grid-4">
+
+    <div class="pcard">
+      <div class="pimg img-1">
+        <img src="https://images.unsplash.com/photo-ft2UhxkefwE?w=400&h=280&q=80&auto=format&fit=crop" alt="Nike Air Max 270">
+      </div>
+      <span class="pbadge sale">Chegirma</span>
+      <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+      <div class="pinfo">
+        <div class="pbrand">Nike</div>
+        <div class="pname">Air Max 270</div>
+        <div class="psizes"><span class="sz">40</span><span class="sz">41</span><span class="sz">42</span><span class="sz">43</span></div>
+        <div class="pfooter">
+          <div><div class="pprice-current">$149</div><div class="pprice-old">$189</div></div>
+          <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pcard">
+      <div class="pimg img-2">
+        <img src="https://images.unsplash.com/photo-164_6wVEHfI?w=400&h=280&q=80&auto=format&fit=crop" alt="Jordan 1 Retro">
+      </div>
+      <span class="pbadge new">Yangi</span>
+      <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+      <div class="pinfo">
+        <div class="pbrand">Jordan</div>
+        <div class="pname">Air Jordan 1 Retro</div>
+        <div class="psizes"><span class="sz">40</span><span class="sz">41</span><span class="sz">42</span><span class="sz">44</span></div>
+        <div class="pfooter">
+          <div><div class="pprice-current">$219</div></div>
+          <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pcard">
+      <div class="pimg img-3">
+        <img src="https://images.unsplash.com/photo-kP6knT7tjn4?w=400&h=280&q=80&auto=format&fit=crop" alt="Yeezy Boost 350">
+      </div>
+      <span class="pbadge hot">Trendda</span>
+      <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+      <div class="pinfo">
+        <div class="pbrand">Adidas</div>
+        <div class="pname">Yeezy Boost 350</div>
+        <div class="psizes"><span class="sz">41</span><span class="sz">42</span><span class="sz">43</span></div>
+        <div class="pfooter">
+          <div><div class="pprice-current">$289</div></div>
+          <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pcard">
+      <div class="pimg img-4">
+        <img src="https://images.unsplash.com/photo-jvoZ-Aux9aw?w=400&h=280&q=80&auto=format&fit=crop" alt="React Infinity">
+      </div>
+      <span class="pbadge new">Yangi</span>
+      <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+      <div class="pinfo">
+        <div class="pbrand">Nike</div>
+        <div class="pname">React Infinity Run</div>
+        <div class="psizes"><span class="sz">40</span><span class="sz">41</span><span class="sz">42</span><span class="sz">43</span></div>
+        <div class="pfooter">
+          <div><div class="pprice-current">$159</div></div>
+          <a href="cart.html"><button class="add-btn"><i class="fa-solid fa-plus"></i></button></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROMO BANNER -->
+<div class="promo">
+  <div style="position:relative;z-index:1;">
+    <div class="promo-tag"><i class="fa-solid fa-bolt"></i> Maxsus Taklif</div>
+    <h2>Yozgi <span>Sale</span><br>30% chegirma</h2>
+    <p>Barcha Nike va Adidas modellariga. Faqat 3 kun!</p>
+    <a href="products.html" class="btn btn-red" style="margin-top:8px;">Chegirmalarni ko'rish &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+  <div class="promo-img">
+    <img src="https://images.unsplash.com/photo-J2-wAQDckus?w=400&h=400&q=80&auto=format&fit=crop" alt="Sale Sneaker">
+  </div>
+</div>
+
+<!-- TRUST BADGES -->
+<div class="trust">
+  <div class="tbadge">
+    <div class="t-icon"><i class="fa-solid fa-truck-fast"></i></div>
+    <h4>Tez Yetkazib Berish</h4>
+    <p>1-2 ish kunida butun O'zbekiston bo'yicha</p>
+  </div>
+  <div class="tbadge">
+    <div class="t-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <h4>100% Original</h4>
+    <p>Faqat rasmiy distribyutorlardan</p>
+  </div>
+  <div class="tbadge">
+    <div class="t-icon"><i class="fa-solid fa-rotate-left"></i></div>
+    <h4>30 kun qaytarish</h4>
+    <p>Mos kelmasa, pulni qaytaramiz</p>
+  </div>
+  <div class="tbadge">
+    <div class="t-icon"><i class="fa-solid fa-lock"></i></div>
+    <h4>Xavfsiz To'lov</h4>
+    <p>Karta va naqd pul qabul qilinadi</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="logo"><span>S</span>OLE</div>
+      <p>Eng sara krasovkalar — sportdan tortib kundalik hayotgacha. Sifat va uslubning uyg'unligi.</p>
+      <div class="foot-social">
+        <div class="soc"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="soc"><i class="fa-brands fa-instagram"></i></div>
+        <div class="soc"><i class="fa-brands fa-youtube"></i></div>
+        <div class="soc"><i class="fa-brands fa-telegram"></i></div>
+      </div>
+    </div>
+    <div class="foot-col">
+      <h4>Sahifalar</h4>
+      <ul>
+        <li><a href="index.html">Bosh sahifa</a></li>
+        <li><a href="products.html">Mahsulotlar</a></li>
+        <li><a href="cart.html">Savat</a></li>
+        <li><a href="liked.html">Sevimlilar</a></li>
+        <li><a href="checkout.html">Buyurtma</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Brendlar</h4>
+      <ul>
+        <li><a href="products.html">Nike</a></li>
+        <li><a href="products.html">Adidas</a></li>
+        <li><a href="products.html">Jordan</a></li>
+        <li><a href="products.html">Converse</a></li>
+        <li><a href="products.html">ASICS</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Aloqa</h4>
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-phone" style="width:14px;"></i> +998 90 123 45 67</a></li>
+        <li><a href="#"><i class="fa-solid fa-envelope" style="width:14px;"></i> info@sole.uz</a></li>
+        <li><a href="#"><i class="fa-solid fa-location-dot" style="width:14px;"></i> Toshkent, O'zbekiston</a></li>
+        <li><a href="#"><i class="fa-solid fa-clock" style="width:14px;"></i> Dush–Shan: 9:00–20:00</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <p>© 2026 SOLE. Barcha huquqlar himoyalangan.</p>
+    <div class="foot-links">
+      <a href="#">Maxfiylik siyosati</a>
+      <a href="#">Foydalanish shartlari</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

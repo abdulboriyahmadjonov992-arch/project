@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savat — SOLE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-logo"><span>S</span>OLE</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Bosh sahifa</a></li>
+    <li><a href="products.html">Mahsulotlar</a></li>
+    <li><a href="cart.html" class="active">Savat</a></li>
+    <li><a href="liked.html">Sevimlilar</a></li>
+    <li><a href="checkout.html">Buyurtma</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="liked.html" class="nav-icon"><i class="fa-regular fa-heart"></i></a>
+    <a href="cart.html" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i><span class="badge">3</span></a>
+  </div>
+</nav>
+
+<!-- CART LAYOUT -->
+<div class="cart-wrap">
+
+  <!-- LEFT: ITEMS -->
+  <div>
+    <div class="cart-hd">
+      <h2><i class="fa-solid fa-cart-shopping" style="color:var(--accent);margin-right:10px;"></i>Savatingiz</h2>
+      <span>3 ta mahsulot</span>
+    </div>
+
+    <!-- Item 1 -->
+    <div class="citem">
+      <div class="citem-img img-1">
+        <img src="https://images.unsplash.com/photo-ft2UhxkefwE?w=120&h=120&q=80&auto=format&fit=crop" alt="Air Max 270">
+      </div>
+      <div>
+        <div class="citem-brand">Nike</div>
+        <div class="citem-name">Air Max 270</div>
+        <div class="citem-meta">
+          <span class="ctag"><i class="fa-solid fa-ruler-horizontal" style="font-size:10px;margin-right:3px;"></i>O'lcham: 42</span>
+          <span class="ctag"><i class="fa-solid fa-palette" style="font-size:10px;margin-right:3px;"></i>Qora</span>
+        </div>
+      </div>
+      <div class="citem-right">
+        <div class="citem-price">$149</div>
+        <div class="qty">
+          <button class="qty-btn">−</button>
+          <span class="qty-n">1</span>
+          <button class="qty-btn">+</button>
+        </div>
+        <button class="rm-btn"><i class="fa-solid fa-trash-can"></i></button>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="citem">
+      <div class="citem-img img-2">
+        <img src="https://images.unsplash.com/photo-164_6wVEHfI?w=120&h=120&q=80&auto=format&fit=crop" alt="Jordan 1">
+      </div>
+      <div>
+        <div class="citem-brand">Jordan</div>
+        <div class="citem-name">Air Jordan 1 Retro High</div>
+        <div class="citem-meta">
+          <span class="ctag"><i class="fa-solid fa-ruler-horizontal" style="font-size:10px;margin-right:3px;"></i>O'lcham: 41</span>
+          <span class="ctag"><i class="fa-solid fa-palette" style="font-size:10px;margin-right:3px;"></i>Qizil/Oq</span>
+        </div>
+      </div>
+      <div class="citem-right">
+        <div class="citem-price">$219</div>
+        <div class="qty">
+          <button class="qty-btn">−</button>
+          <span class="qty-n">1</span>
+          <button class="qty-btn">+</button>
+        </div>
+        <button class="rm-btn"><i class="fa-solid fa-trash-can"></i></button>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="citem">
+      <div class="citem-img img-3">
+        <img src="https://images.unsplash.com/photo-kP6knT7tjn4?w=120&h=120&q=80&auto=format&fit=crop" alt="Yeezy 350">
+      </div>
+      <div>
+        <div class="citem-brand">Adidas</div>
+        <div class="citem-name">Yeezy Boost 350 V2</div>
+        <div class="citem-meta">
+          <span class="ctag"><i class="fa-solid fa-ruler-horizontal" style="font-size:10px;margin-right:3px;"></i>O'lcham: 43</span>
+          <span class="ctag"><i class="fa-solid fa-palette" style="font-size:10px;margin-right:3px;"></i>Krema</span>
+        </div>
+      </div>
+      <div class="citem-right">
+        <div class="citem-price">$289</div>
+        <div class="qty">
+          <button class="qty-btn">−</button>
+          <span class="qty-n">1</span>
+          <button class="qty-btn">+</button>
+        </div>
+        <button class="rm-btn"><i class="fa-solid fa-trash-can"></i></button>
+      </div>
+    </div>
+
+    <!-- Recommended -->
+    <div style="margin-top:48px;">
+      <div class="section-head" style="margin-bottom:24px;">
+        <h3 style="font-size:20px;font-weight:800;"><i class="fa-solid fa-fire" style="color:#ff9f0a;margin-right:8px;"></i>Sizga tavsiya etamiz</h3>
+      </div>
+      <div class="grid-4" style="grid-template-columns:repeat(3,1fr);">
+
+        <div class="pcard">
+          <div class="pimg img-4"><img src="https://images.unsplash.com/photo-jvoZ-Aux9aw?w=400&h=280&q=80&auto=format&fit=crop" alt="React Infinity"></div>
+          <span class="pbadge new">Yangi</span>
+          <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+          <div class="pinfo">
+            <div class="pbrand">Nike</div>
+            <div class="pname">React Infinity Run</div>
+            <div class="pfooter">
+              <div class="pprice-current">$159</div>
+              <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard">
+          <div class="pimg img-5"><img src="https://images.unsplash.com/photo-gKEp40qEezc?w=400&h=280&q=80&auto=format&fit=crop" alt="Blazer Mid"></div>
+          <span class="pbadge sale">Chegirma</span>
+          <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+          <div class="pinfo">
+            <div class="pbrand">Nike</div>
+            <div class="pname">Blazer Mid '77</div>
+            <div class="pfooter">
+              <div><div class="pprice-current">$99</div><div class="pprice-old">$129</div></div>
+              <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard">
+          <div class="pimg img-6"><img src="https://images.unsplash.com/photo-su7PjvuQ-1c?w=400&h=280&q=80&auto=format&fit=crop" alt="Chuck Taylor"></div>
+          <label class="like-btn"><input type="checkbox"><div class="like-icon"><i class="fa-solid fa-heart"></i></div></label>
+          <div class="pinfo">
+            <div class="pbrand">Converse</div>
+            <div class="pname">Chuck Taylor All Star</div>
+            <div class="pfooter">
+              <div class="pprice-current">$79</div>
+              <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: SUMMARY -->
+  <div class="summary">
+    <div class="sum-title"><i class="fa-solid fa-receipt" style="color:var(--accent);margin-right:8px;"></i>Buyurtma xulosasi</div>
+
+    <div class="sum-row"><span class="lbl">Jami mahsulot:</span><span>$657</span></div>
+    <div class="sum-row"><span class="lbl">Yetkazib berish:</span><span style="color:#30d158;font-weight:600;"><i class="fa-solid fa-truck-fast" style="margin-right:4px;"></i>Bepul</span></div>
+    <div class="sum-row"><span class="lbl">Chegirma (−10%):</span><span style="color:var(--accent);">−$65.70</span></div>
+    <div class="sum-row total"><span class="lbl">Jami:</span><span>$591.30</span></div>
+
+    <div style="margin-top:16px;">
+      <div style="font-size:12px;font-weight:600;color:var(--muted);margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px;">
+        <i class="fa-solid fa-tag" style="color:var(--accent);margin-right:4px;"></i>Promo kodi
+      </div>
+      <div class="coupon">
+        <input type="text" placeholder="Masalan: SOLE10">
+        <button>Qo'llash</button>
+      </div>
+    </div>
+
+    <a href="checkout.html">
+      <button class="go-checkout"><i class="fa-solid fa-lock"></i> Buyurtma berish</button>
+    </a>
+    <a href="products.html" class="cont-shop"><i class="fa-solid fa-arrow-left"></i> Xaridni davom ettirish</a>
+
+    <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border);">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);">
+          <i class="fa-solid fa-lock" style="color:#30d158;width:16px;"></i><span>Xavfsiz to'lov kafolati</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);">
+          <i class="fa-solid fa-rotate-left" style="color:#30d158;width:16px;"></i><span>30 kunlik qaytarish huquqi</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);">
+          <i class="fa-solid fa-truck-fast" style="color:#30d158;width:16px;"></i><span>1-2 ish kunida yetkazib berish</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="logo"><span>S</span>OLE</div>
+      <p>Eng sara krasovkalar — sportdan tortib kundalik hayotgacha.</p>
+      <div class="foot-social">
+        <div class="soc"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="soc"><i class="fa-brands fa-instagram"></i></div>
+        <div class="soc"><i class="fa-brands fa-youtube"></i></div>
+        <div class="soc"><i class="fa-brands fa-telegram"></i></div>
+      </div>
+    </div>
+    <div class="foot-col"><h4>Sahifalar</h4><ul>
+      <li><a href="index.html">Bosh sahifa</a></li>
+      <li><a href="products.html">Mahsulotlar</a></li>
+      <li><a href="liked.html">Sevimlilar</a></li>
+      <li><a href="checkout.html">Buyurtma</a></li>
+    </ul></div>
+    <div class="foot-col"><h4>Brendlar</h4><ul>
+      <li><a href="#">Nike</a></li><li><a href="#">Adidas</a></li>
+      <li><a href="#">Jordan</a></li><li><a href="#">Converse</a></li>
+    </ul></div>
+    <div class="foot-col"><h4>Aloqa</h4><ul>
+      <li><a href="#"><i class="fa-solid fa-phone" style="width:14px;"></i> +998 90 123 45 67</a></li>
+      <li><a href="#"><i class="fa-solid fa-envelope" style="width:14px;"></i> info@sole.uz</a></li>
+      <li><a href="#"><i class="fa-solid fa-location-dot" style="width:14px;"></i> Toshkent, O'zbekiston</a></li>
+    </ul></div>
+  </div>
+  <div class="foot-bottom">
+    <p>© 2026 SOLE. Barcha huquqlar himoyalangan.</p>
+    <div class="foot-links"><a href="#">Maxfiylik</a><a href="#">Shartlar</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
